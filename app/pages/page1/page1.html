@@ -1,0 +1,50 @@
+<ion-navbar *navbar>
+	<ion-title>Intro</ion-title>
+</ion-navbar>
+
+<ion-content padding class="page1">
+	<h1>Firebase in Angular 2</h1>
+	<p>If you're interested in the files that I've changed to integrate Firebase and get this simple auth example working, they're:</p>
+	<ul>
+		<li><strong>www/index.html</strong> - you'll find that I've added the CDN reference to Firebase, as well as initialized the database</li>
+		<li>
+			<strong>app/data/data.service.ts</strong> - sets up Firebase database references
+		</li>
+		<li>
+			<strong>app/data/user.service.ts</strong> - abstracts Firebase auth methods
+		</li>
+		<li>
+			<strong>app/pages/page1/</strong> - the currently active component
+			<ul>
+				<li><strong>page1.html</strong> - the template you're currently viewing</li>
+			</ul>
+		</li>
+		<li>
+			<strong>app/pages/page2/</strong> - basic database demo
+			<ul>
+				<li><strong>page2.html</strong> - sets up the template for displaying synced data</li>
+				<li><strong>page2.ts</strong> - builds out the @Page for displaying synced data</li>
+			</ul>
+		</li>
+		<li>
+			<strong>app/pages/page3/</strong> - Firebase authentication demo
+			<ul>
+				<li><strong>page3.html</strong> - sets up the template for displaying user auth states</li>
+				<li><strong>page3.ts</strong> - builds out the @Page for integrating user auth states</li>
+				<li><strong>components/</strong> - components used for interacting with auth states
+					<ul>
+						<li>
+							<strong>login.component.ts</strong> - builds the login form, integrats the user service login function
+						</li>
+						<li>
+							<strong>logout.component.ts</strong> - allows the user to logout, resetting the view to display the login form
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<strong>app/pages/tabs/tabs.html</strong> - revised tab titles
+		</li>
+	</ul>
+</ion-content>
