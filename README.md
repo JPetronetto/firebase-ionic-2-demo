@@ -60,9 +60,21 @@ $ ionic platform add android
 
 ## Running the Project
 
-Provided you've followed the instructions above, and have an internet connection, you should be able to run the app, and see the stuffs.  It's all coming from a demo app that I have set up on my Firebase dashboard, which has two seeded records, and one dumy user.
+Provided you've followed the instructions above, and have an internet connection, you should be able to run the app, and see the stuffs.  It's all coming from a demo app that I have set up on my Firebase dashboard, which has two seeded records, and one dummy user.
 
-### To Replace My Firebase With Your Firebase:
+### iOS
+```
+# for some reason, I had to run this twice on the first go
+# maybe once to build, and once to serve?
+$ ionic run ios
+```
+
+### Android
+```
+$ ionic run android
+```
+
+## To Replace My Firebase App With Your Firebase App:
 
 1. Seed the app with data that matches the following interface:
 ```
