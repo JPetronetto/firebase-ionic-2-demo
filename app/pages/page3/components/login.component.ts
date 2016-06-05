@@ -25,7 +25,7 @@ import { UserService } from '../../../user/user.service';
 
             <ion-item>
                 <ion-label stacked>Password</ion-label>
-                <ion-input [(ngModel)]="password"
+                <ion-input [(ngModel)]="userPassword"
                            type="password"></ion-input>
             </ion-item>
 
