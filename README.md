@@ -76,16 +76,16 @@ $ ionic run android
 
 ## To Replace My Firebase App With Your Firebase App:
 
-1. Seed the app with data that matches the following interface:
+- Seed the app with data that matches the following interface:
 ```
 {
 	static: string,
 	private: string
 }
 ```
-2. Enable your application to use Email/Password authentication, on the **Sign In Method** tab of the Auth link in your app dashboard.
-3. In the **Users** tab of the Auth link in your app dashboard, create a dummy user.
-4. In the **Rules** tab of the Database link in your app dashboard, revise the default rules to match the following JSON:
+- Enable your application to use Email/Password authentication, on the **Sign In Method** tab of the Auth link in your app dashboard.
+- In the **Users** tab of the Auth link in your app dashboard, create a dummy user.
+- In the **Rules** tab of the Database link in your app dashboard, revise the default rules to match the following JSON:
 ```
 {
   "rules": {
@@ -97,6 +97,6 @@ $ ionic run android
   }
 }
 ```
-5. In the app dashboard Home screen, click on the **Add Firebase to your web app** link, and copy the contents of the modal; then replace lines 24-34 of `www/index.html` with the contents of that modal.
+- In the app dashboard Home screen, click on the **Add Firebase to your web app** link, and copy the contents of the modal; then replace lines 24-34 of `www/index.html` with the contents of that modal.
 
 Cake and grief counseling will be available at the conclusion of the test.
