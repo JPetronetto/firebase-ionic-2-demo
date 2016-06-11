@@ -2,6 +2,7 @@
  * Created by colinjlacy on 6/5/16.
  */
 import {Injectable} from '@angular/core';
+import * as firebase from 'firebase';
 
 @Injectable()
 export class DataService {
