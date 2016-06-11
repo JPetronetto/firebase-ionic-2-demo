@@ -1,6 +1,7 @@
 import {App, Platform} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {TabsPage} from './pages/tabs/tabs';
+import * as firebase from 'firebase';
 
 
 @App({
@@ -12,7 +13,16 @@ export class MyApp {
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD44soNIK81xzRjQXZ2Lmlb03CBIx4zVY4",
+            authDomain: "fir-app-f088c.firebaseapp.com",
+            databaseURL: "https://fir-app-f088c.firebaseio.com",
+            storageBucket: "fir-app-f088c.appspot.com"
+        };
+        firebase.initializeApp(config);
+
+        // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
     });
