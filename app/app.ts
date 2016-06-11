@@ -3,7 +3,6 @@ import {StatusBar} from 'ionic-native';
 import {TabsPage} from './pages/tabs/tabs';
 import * as firebase from 'firebase';
 
-
 @App({
     template: '<ion-nav [root]="rootPage"></ion-nav>',
     config: {} // http://ionicframework.com/docs/v2/api/config/Config/
@@ -11,17 +10,17 @@ import * as firebase from 'firebase';
 export class MyApp {
     rootPage: any = TabsPage;
 
-    constructor(platform: Platform) {
-        platform.ready().then(() => {
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyD44soNIK81xzRjQXZ2Lmlb03CBIx4zVY4",
-                authDomain: "fir-app-f088c.firebaseapp.com",
-                databaseURL: "https://fir-app-f088c.firebaseio.com",
-                storageBucket: "fir-app-f088c.appspot.com"
-            };
-            firebase.initializeApp(config);
+    constructor(platform: Platform) {            // Initialize Firebase
+        const
+            fbConf = {
+            apiKey: "AIzaSyD44soNIK81xzRjQXZ2Lmlb03CBIx4zVY4",
+            authDomain: "fir-app-f088c.firebaseapp.com",
+            databaseURL: "https://fir-app-f088c.firebaseio.com",
+            storageBucket: "fir-app-f088c.appspot.com"
+        };
+        firebase.initializeApp(fbConf);
 
+        platform.ready().then(() => {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
             StatusBar.styleDefault();
