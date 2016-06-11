@@ -10,7 +10,7 @@ import * as firebase from 'firebase';
 export class MyApp {
     rootPage: any = TabsPage;
 
-    constructor(platform: Platform) {            // Initialize Firebase
+    constructor(platform: Platform) {
         const
             fbConf = {
             apiKey: "AIzaSyD44soNIK81xzRjQXZ2Lmlb03CBIx4zVY4",
@@ -21,8 +21,6 @@ export class MyApp {
         firebase.initializeApp(fbConf);
 
         platform.ready().then(() => {
-            // Okay, so the platform is ready and our plugins are available.
-            // Here you can do any higher level native things you might need.
             StatusBar.styleDefault();
         });
     }
