@@ -17,7 +17,7 @@ You can find information on all of these topics in the [Web guide in the Firebas
 
 ### Repo Download
 
-When you pull this branch, it will come with nothing but the app files.  You'll need to run through the installation process for building an Ionic project, which is normally done for you in `ionic start`.
+When you clone this repo, it will come with nothing but the app files.  You'll need to run through the installation process for building an Ionic project, which is normally done for you in `ionic start`.
 
 #### Environment
 
